@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_content"
+    tools:context="com.mobitribe.app.qreader.MainActivity">
+
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/fab_margin"
+        android:alpha="0.5"
+        app:fabSize="normal"
+        android:tint="@android:color/white"
+        app:backgroundTint="@android:color/black"
+        app:srcCompat="@drawable/qr_code_icn" />
+
+    <LinearLayout
+        android:id="@+id/error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/error_bg"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/error_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error_loading_page"
+            android:textColor="#434343"
+            android:textSize="@dimen/normal_text_size"/>
+        <ImageButton
+            android:id="@+id/refresh"
+            android:layout_width="@dimen/refresh_size"
+            android:layout_height="@dimen/refresh_size"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:background="@drawable/referesh"/>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

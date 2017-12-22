@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QReader</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">Company\nLogo</string>
+    <string name="url">http://develop.tec-inmove.com:8080/test/example.html</string>
+    <string name="error_loading_page">Error loading page</string>
+</resources>
